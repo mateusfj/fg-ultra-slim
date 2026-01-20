@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type Bonus = {
   image: string;
   title: string;
@@ -14,9 +16,11 @@ const BonusCard = ({ bonus }: BonusCardProps) => {
     <div className="flex flex-col">
       {/* Image */}
       <div className="rounded-md overflow-hidden mb-4">
-        <img
+        <Image
           src={bonus.image}
           alt={bonus.title}
+          width={400}
+          height={400}
           className="w-full h-auto object-cover aspect-square"
         />
       </div>

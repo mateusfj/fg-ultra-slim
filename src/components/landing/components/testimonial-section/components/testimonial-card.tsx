@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 export type Testimonial = {
   name: string;
@@ -18,9 +19,11 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
     <div className="bg-card rounded-2xl overflow-hidden border border-border h-full">
       {/* Before/After Image */}
       <div className="relative">
-        <img
+        <Image
           src={testimonial.image}
           alt={`Transformação de ${testimonial.name}`}
+          width={800}
+          height={400}
           className="w-full h-48 object-cover"
         />
         {/* Weight Loss Badge */}

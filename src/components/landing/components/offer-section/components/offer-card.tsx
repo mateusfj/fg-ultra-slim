@@ -1,4 +1,5 @@
 import { Button } from "@/components/@shared/buttons/button";
+import Image from "next/image";
 
 export type OfferPlan = {
   name: string;
@@ -25,9 +26,11 @@ const OfferCard = ({ plan }: { plan: OfferPlan }) => {
     >
       {/* Imagem do kit */}
       <div className="mb-4 flex justify-center">
-        <img
+        <Image
           src={plan.image}
           alt={plan.name}
+          width={256}
+          height={128}
           className="w-auto h-32 object-contain drop-shadow-md -mt-14"
         />
       </div>

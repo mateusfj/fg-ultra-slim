@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const GuaranteeSection = () => {
   return (
     <section className="relative flex items-center py-12 md:py-24">
@@ -27,9 +29,11 @@ const GuaranteeSection = () => {
 
           {/* Product Image with Guarantee Badge */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <img
+            <Image
               src={"/images/guarantee-img.png"}
               alt="GF Ultra Slim com garantia de 30 dias"
+              width={600}
+              height={600}
               className="w-full max-w-md lg:max-w-lg"
             />
           </div>

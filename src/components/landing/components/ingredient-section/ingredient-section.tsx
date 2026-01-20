@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const ingredients = [
   {
@@ -48,7 +49,13 @@ const IngredientCard = ({
     className={`flex flex-col ${align === "right" ? "items-end text-right" : "items-start text-left"}`}
   >
     <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-primary/30 mb-3 flex items-center justify-center shadow-lg overflow-hidden bg-white">
-      <img src={image} alt={title} className="w-full h-full object-cover" />
+      <Image
+        src={image}
+        alt={title}
+        width={96}
+        height={96}
+        className="w-full h-full object-cover"
+      />
     </div>
     <h4 className="font-bold text-foreground text-sm md:text-base mb-2">
       {title}
@@ -96,9 +103,11 @@ const IngredientsSection = () => {
           {/* Center - Product */}
           <div className="relative flex justify-center items-center col-span-2">
             {/* Product Image */}
-            <img
+            <Image
               src={"/images/ingredients/product-100-natural.png"}
               alt="GF Ultra Slim - Suplemento Natural"
+              width={480}
+              height={480}
               className="relative z-10 "
             />
           </div>
@@ -115,9 +124,11 @@ const IngredientsSection = () => {
         <div className="lg:hidden">
           {/* Product Center */}
           <div className="relative flex justify-center items-center mb-12">
-            <img
+            <Image
               src={"/images/ingredients/product-100-natural.png"}
               alt="GF Ultra Slim - Suplemento Natural"
+              width={384}
+              height={384}
               className="relative z-10 w-96 drop-shadow-2xl"
             />
           </div>

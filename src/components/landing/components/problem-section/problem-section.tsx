@@ -19,7 +19,7 @@ export const ProblemSection = () => {
             alt="Pessoa preocupada com o próprio corpo diante do espelho"
             width={360}
             height={360}
-            className="order-1 lg:order-0 w-full max-w-sm h-auto block lg:hidden -mb-15 mx-auto"
+            className="order-1 lg:order-0 w-full max-w-sm h-auto block lg:hidden -mb-12 md:-mb-24 mx-auto"
           />
           <div></div>
           <div className="flex flex-col gap-6">

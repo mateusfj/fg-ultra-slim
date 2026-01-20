@@ -1,4 +1,5 @@
 import { Button } from "@/components/@shared/buttons/button";
+import Image from "next/image";
 
 export const CompositionSection = () => {
   return (
@@ -13,14 +14,18 @@ export const CompositionSection = () => {
     >
       <div className="max-w-[1200px] mx-auto px-[5%] flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 relative items-center">
-          <img
+          <Image
             src="/images/mao-2.png"
             alt="Problem Illustration"
+            width={800}
+            height={800}
             className="order-1 lg:order-0 absolute  max-w-md w-full hidden lg:block"
           />
-          <img
+          <Image
             src="/images/mao-2.png"
             alt="Problem Illustration"
+            width={600}
+            height={600}
             className="order-1 lg:order-0 w-full max-w-sm block lg:hidden -mb-24 mx-auto"
           />
           <div></div>

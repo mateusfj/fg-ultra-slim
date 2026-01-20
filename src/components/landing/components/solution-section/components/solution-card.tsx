@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type Solution = {
   image: string;
   text: string;
@@ -14,9 +16,11 @@ const SolutionCard = ({ solution }: SolutionCardProps) => {
     <div className="flex flex-col items-center text-center">
       {/* Circular Image */}
       <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 mb-4 shadow-lg">
-        <img
+        <Image
           src={solution.image}
           alt={solution.highlight}
+          width={160}
+          height={160}
           className="w-full h-full object-cover"
         />
       </div>
