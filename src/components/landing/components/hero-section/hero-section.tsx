@@ -30,7 +30,6 @@ const Hero = () => {
               alt="Métodos de Pagamento"
               width={300}
               height={60}
-              loading="lazy"
               className="mx-auto md:mx-0 h-auto w-[300px]"
             />
           </div>
