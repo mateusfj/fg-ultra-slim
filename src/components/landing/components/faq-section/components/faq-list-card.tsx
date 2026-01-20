@@ -47,7 +47,11 @@ const faqs: FAQ[] = [
 
 const FAQListCard = () => {
   return (
-    <Accordion type="single" collapsible className="space-y-4">
+    <Accordion
+      type="single"
+      collapsible
+      className="space-y-0 divide-y divide-border border border-border rounded-md overflow-hidden"
+    >
       {faqs.map((faq, index) => (
         <FAQCard key={index} faq={faq} index={index} />
       ))}

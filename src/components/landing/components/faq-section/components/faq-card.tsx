@@ -16,10 +16,7 @@ export type FAQCardProps = {
 
 const FAQCard = ({ faq, index }: FAQCardProps) => {
   return (
-    <AccordionItem
-      value={`item-${index}`}
-      className="bg-card border border-border rounded-md px-6"
-    >
+    <AccordionItem value={`item-${index}`} className="bg-card px-6">
       <AccordionTrigger className="text-lg md:text-xl cursor-pointer text-left font-semibold hover:text-primary transition-colors py-5">
         {faq.question}
       </AccordionTrigger>
