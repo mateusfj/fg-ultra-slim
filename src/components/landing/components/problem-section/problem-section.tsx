@@ -30,7 +30,8 @@ export const ProblemSection = () => {
             </h2>
 
             <p className="text-lg md:text-xl">
-              Se você não consegue lembrar, então é hora de conhecer FegMonjar
+              Se você não consegue lembrar, então é hora de conhecer GF Ultra
+              Slim.
             </p>
 
             <p className="text-lg md:text-xl mb-6">

@@ -10,7 +10,9 @@ const Hero = () => {
           {/* Left Content */}
           <div className="flex flex-col gap-4 text-center md:text-left order-1 md:order-0 max-w-xl">
             <h1 className="font-bold text-primary text-3xl lg:text-5xl leading-[1.05] tracking-tighter">
-              Perca peso, ganhe confiança e tenha a qualidade de vida que você
+              <span className="text-secondary">Perca peso</span>, ganhe
+              confiança e tenha a{" "}
+              <span className="text-secondary">qualidade de vida</span> que você
               tanto quer e precisa!
             </h1>
 
