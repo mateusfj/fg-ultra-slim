@@ -30,6 +30,7 @@ const Hero = () => {
               alt="Métodos de Pagamento"
               width={300}
               height={60}
+              priority
               className="mx-auto md:mx-0 h-auto w-[300px]"
             />
           </div>
@@ -41,6 +42,7 @@ const Hero = () => {
             width={640}
             height={640}
             priority
+            fetchPriority="high"
             className="max-w-full h-auto"
           />
         </div>

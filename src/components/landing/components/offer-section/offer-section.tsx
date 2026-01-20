@@ -50,7 +50,7 @@ const PLANS: OfferPlan[] = [
 
 const OfferSection = () => {
   return (
-    <section className="py-12 md:py-24 bg-muted/20">
+    <section id="offer-section" className="py-12 md:py-24 bg-muted/20">
       <div className="max-w-[1200px] mx-auto px-[5%]">
         {/* Header */}
         <div className="text-center mb-20 md:mb-20 max-w-2xl mx-auto">
