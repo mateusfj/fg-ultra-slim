@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <Image
-              src="/images/metodo-de-pagamento.png"
+              src="/images/hero/metodo-de-pagamento.png"
               alt="Métodos de Pagamento"
               width={300}
               height={60}
@@ -37,7 +37,7 @@ const Hero = () => {
 
           {/* Right Content */}
           <Image
-            src="/images/hero-img.png"
+            src="/images/hero/hero-img.png"
             alt="GF Ultra Slim Bottles"
             width={640}
             height={640}
